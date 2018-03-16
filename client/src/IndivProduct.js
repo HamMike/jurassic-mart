@@ -1,18 +1,5 @@
 import React from 'react';
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-
 const IndivProduct = (props) => {
-
-=======
-const IndivProduct = (props) => {
->>>>>>> 5c360d839becc494626114e410075d9bf1419366
-=======
-
-const IndivProduct = (props) => {
-
->>>>>>> 594d4400573c33c50772d92e59d896861a9853cd
 
   return (
 		<div class="col s4 m4 l4">

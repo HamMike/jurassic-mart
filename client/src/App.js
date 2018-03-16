@@ -83,7 +83,7 @@ class App extends Component {
 
 	render() {
 		// const inCart = this.state.cartItems.map( (product, index) => {
-		// 	return <Cart 
+		// 	return <Cart
 		// 		key={index}
 		// 		name={product.name}
 		// 		image={product.image}
@@ -95,35 +95,13 @@ class App extends Component {
 		return(
 			<Router>
 				<div>
-<<<<<<< HEAD
-<<<<<<< HEAD
-
 					<Nav />
-=======
-					<Nav />	
->>>>>>> 5c360d839becc494626114e410075d9bf1419366
-=======
-
-					<Nav />	
-
->>>>>>> 594d4400573c33c50772d92e59d896861a9853cd
 				    <Route exact path='/' component={Home} />
 				    <Route exact path='/Products' component={() => <Products onAddCartItem={this.addCartItem}/> } />
 				    <Route exact path='/Login' component={() => <Login />} />
 				    <Route exact path='/Signup' component={Signup} />
-<<<<<<< HEAD
-<<<<<<< HEAD
-				    <Route exact path='/Cart' component={() => <Cart cartItem={this.state.cartItems} />} />
-			    </div>
-
-=======
 				    <Route exact path='/Cart' component={() => <Cart cartItems={this.state.cartItems} /> } />
 				</div>
->>>>>>> 5c360d839becc494626114e410075d9bf1419366
-=======
-				    <Route exact path='/Cart' component={() => <Cart cartItems={this.state.cartItems} /> } />
-				</div>
->>>>>>> 594d4400573c33c50772d92e59d896861a9853cd
 			</Router>
 		)
 
