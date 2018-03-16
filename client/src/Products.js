@@ -78,8 +78,8 @@ class Products extends Component {
 		console.log(allProducts)
 		return(
 			<div>
-				<div class='row'>
-					<div class='col s12 m12 l12'>
+				<div className='row'>
+					<div className='col s12 m12 l12'>
 						<br/>
 						<h1>Products</h1>
 						<br/><br/><br/>
@@ -87,8 +87,8 @@ class Products extends Component {
 						<img className='goldblum' src='http://i.imgur.com/jbPGt.png' />
 					</div>
 				</div>
-				<div class='row'>
-					{allProducts}
+				<div className='row'>
+					<div className='col s12 m12 l12'>{allProducts}</div>
 				</div>
 			</div>
 		)

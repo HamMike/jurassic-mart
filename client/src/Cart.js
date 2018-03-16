@@ -11,7 +11,7 @@ const Cart = (props) => {
 	})
 	let cartItems = props.cartItems.map((item, index) => {
 		return (
-			<div key={index} className='col s4 m4 l4 offset-s2 offset-m2 offset-l2'>
+			<div key={index} className='col s4 m4 l4'>
 		            <div class="card small">
 		              <div class="card-image">
 		                <img src={item.image} />
@@ -20,7 +20,7 @@ const Cart = (props) => {
 		              <div class="card-content">
 		                <h6> Product Description: </h6>
 		                <p>{item.desc}</p>
-		                <p>Price: ${item.price}</p>
+		                <p>Price: {item.price} pretty rocks</p>
 		              </div>
 		            </div>
 			</div>
@@ -29,11 +29,11 @@ const Cart = (props) => {
 	return(
 		<div>
 			<div className='row cart'>
-				{cartItems}
-				<div className='col s4 m4 l4 total'>
+				<div className='col s6 m6 l6'><div className='row'>{cartItems}</div></div>
+				<div className='col s6 m6 l6 total'>
 					<img className='responsive-img dino' src='https://vignette.wikia.nocookie.net/jurassicfightclub/images/c/cd/Stegosaurus.png/revision/latest?cb=20121003014145' />
 					<h1>Total:</h1>
-					<p>{total}</p>
+					<p>{total} pretty rocks</p>
 					<a href='/checkout'>Checkout Now</a> 
 				</div>
 

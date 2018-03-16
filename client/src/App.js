@@ -101,6 +101,7 @@ class App extends Component {
 				    <Route exact path='/Login' component={() => <Login />} />
 				    <Route exact path='/Signup' component={Signup} />
 				    <Route exact path='/Cart' component={() => <Cart cartItems={this.state.cartItems} /> } />
+				    <Route exact path='/Checkout' component={Checkout} />
 				</div>
 			</Router>
 		)
